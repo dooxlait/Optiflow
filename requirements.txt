@@ -1,0 +1,14 @@
+# ORM pour base de données
+SQLAlchemy>=2.0.0
+marshmallow>=3.20.0
+marshmallow-sqlalchemy>=0.28.0
+
+
+# Gestion de fichiers .env pour config (optionnel)
+python-dotenv>=1.0.0
+
+# Tests unitaires
+pytest>=7.0.0
+
+# Outils supplémentaires utiles
+pytz>=2023.3            # gestion des fuseaux horaires

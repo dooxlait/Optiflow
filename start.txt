@@ -1,0 +1,19 @@
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+
+python main.py (sans reload)
+python autoreload.py (avec reload)
+
+COMPILATION pyinstaller --onefile --windowed main.py
+
+Ménage : 
+
+# Supprimer le dossier build
+Remove-Item -Recurse -Force .\build
+
+# Supprimer le dossier dist
+Remove-Item -Recurse -Force .\dist
+
+# Supprimer le fichier .spec
+Remove-Item -Force .\main.spec
